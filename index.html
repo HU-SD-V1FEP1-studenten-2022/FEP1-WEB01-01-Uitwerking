@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FEP1 - WEB01</title>
+    <link rel="stylesheet" href="./styles/init-index.css" />
+    <script type="module" src="./src/app-index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <span class="weather-info"></span>
+      <span class="current-time"></span>
+    </header>
+
+    <main>
+      <h1>ICT Vakken</h1>
+
+      <table id="subject-table">
+        <thead>
+          <tr>
+            <th>Vakcode</th>
+            <th>Vaknaam</th>
+            <th>Behaald</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <template id="subject-table-row-template">
+        <tr class="">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <button><img src="./images/edit-icon.svg" alt="edit" /></button>
+          </td>
+          <td>
+            <button><img src="./images/delete_icon.svg" alt="delete" /></button>
+          </td>
+        </tr>
+      </template>
+
+      <a href="./pages/subject_form_page.html">
+        <button class="addSubjectBtn">+</button>
+      </a>
+
+      <dialog id="subject-info">
+        <form method="dialog">
+          <h2 id="subject-name"></h2>
+          <h3 id="subject-code"></h3>
+          <table>
+            <thead>
+              <th>ECTS:</th>
+              <th>Studiejaar:</th>
+              <th>Blok:</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="subject-ects"></td>
+                <td id="subject-year"></td>
+                <td id="subject-periode"></td>
+              </tr>
+            </tbody>
+          </table>
+          <p id="subject-description"></p>
+          <button>OK</button>
+        </form>
+      </dialog>
+      
+      <aside>
+        <canvas id="dashboard-chart" width="300" height="300"></canvas>
+      </aside>
+  
+    </main>
+
+    <footer>
+      <span>
+        <button class="toggleThemeBtn">Toggle Theme</button>
+      </span>
+    </footer>
+  </body>
+</html>

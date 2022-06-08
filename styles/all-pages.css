@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  grid-area: header;
+  background-color: yellowgreen;
+}
+
+main {
+  grid-area: main;
+  padding: 25px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: greenyellow;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-content: stretch;
+  grid-template-rows: auto 1fr minmax(50px, auto);
+  grid-template-areas:
+    "header header header"
+    "main   main   chart "
+    "footer footer footer";
+}
+
+/* Default light theme */
+body {
+  background-color: white;;
+}
+
+ul {
+  margin-left: 15px;
+}
+
+body.dark-theme {
+  background-color: black;
+}
+
+/* ---- CUT ---- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+  body.light-theme {
+    background-color: white;
+  }
+}
+/* ---- ENDCUT ---- */

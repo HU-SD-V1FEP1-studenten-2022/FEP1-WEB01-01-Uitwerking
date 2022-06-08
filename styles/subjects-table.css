@@ -1,0 +1,48 @@
+table {
+  font-size: large;
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: darkorange;
+  font-size: larger;
+}
+
+th {
+  padding: 10px;
+}
+
+.even {
+  background-color: cornflowerblue;
+}
+
+td {
+  padding: 10px;
+}
+
+td > button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+td img {
+  width: 30px;
+  height: 30px;
+}
+
+tr td:nth-child(3) {
+  text-align: center;
+  justify-content: center;
+}
+
+tr td:nth-child(4) {
+  text-align: center;
+  justify-content: center;
+}
+
+tr td:nth-child(5) {
+  text-align: center;
+  justify-content: center;
+}

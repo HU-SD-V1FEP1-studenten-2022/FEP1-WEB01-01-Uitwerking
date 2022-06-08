@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  color:gray;
+  margin-bottom: 0.5rem;
+}
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+select, option {
+  text-align-last: center;
+}
+
+.primary-button, .secondary-button {
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.primary-button {
+  background-color: lightgreen;
+}
+
+form {
+  margin: 1rem;
+}
+
+span.error {
+  color: #ff0000;
+}
+
+input.error {
+  border-color: red;
+}

@@ -1,0 +1,8 @@
+.toggleThemeBtn {
+  vertical-align: middle;
+  border-radius: 30px;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 10px 1rem 10px;
+  background-color: coral;
+}

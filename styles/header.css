@@ -1,0 +1,19 @@
+.weather-info {
+  grid-area: weather;
+}
+
+.weather-info img {
+  vertical-align: middle;
+}
+
+.current-time {
+  grid-area: clock;
+  justify-self: right;
+  margin: auto 1rem auto;
+}
+
+header {
+  display: grid;
+  grid-template-areas:
+    "weather empty clock";
+}
