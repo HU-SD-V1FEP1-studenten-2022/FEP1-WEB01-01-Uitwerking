@@ -1,0 +1,38 @@
+aside {
+  grid-area: chart;
+}
+
+main > h1 {
+  grid-area: heading;
+  text-align: center;
+}
+
+main > table {
+  grid-area: subjects
+}
+
+.addSubjectBtn {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 45%;
+  transform: translateX(-50%);
+  bottom: 100px;
+  padding: .5rem;
+  font-size: 3rem;
+  border-radius: 100%;
+  color:white;
+  background-color: blue;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(50px, auto) 1fr 70px;
+  grid-template-areas:
+    "heading  heading"
+    "subjects chart  "
+    ".        chart  ";
+  overflow: auto;
+}
+

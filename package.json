@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "@axe-core/cli": "^4.4.2",
+    "@esm-bundle/chai": "^4.3.4-fix.0",
+    "@rollup/plugin-node-resolve": "^13.2.0",
+    "@web/dev-server": "^0.1.30",
+    "@web/rollup-plugin-copy": "^0.3.0",
+    "@web/rollup-plugin-html": "^1.10.2",
+    "@web/test-runner": "^0.13.27",
+    "cypress": "^9.5.4",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "config": {
+    "url": "http://localhost",
+    "port": "8000"
+  },
+  "scripts": {
+    "start": "web-dev-server --node-resolve --watch --open",
+    "test": "web-test-runner test/**/*.test.js --node-resolve --watch",
+    "test:eslint": "eslint src/**/*.js",
+    "test:a11y": "axe.cmd %npm_package_config_url%:%npm_package_config_port%/index.html",
+    "test:cypress": "cypress open",
+    "build": "rollup --config rollup.config.js"
+  },
+  "dependencies": {
+    "chart.js": "^3.7.1"
+  }
+}

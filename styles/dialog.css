@@ -1,0 +1,49 @@
+dialog {
+  background-color: blanchedalmond;
+  width: 400px;
+  text-align: center;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+dialog table td {
+  text-align: center;
+  font-weight: bold;
+}
+dialog table th {
+  background-color: deepskyblue;
+  color: black;
+}
+
+dialog table tr:not(.completed) {
+  background-color: red;
+  color: black;
+}
+
+dialog table tr.completed {
+  background-color: greenyellow;
+}
+
+#subject-description {
+  text-align: start;
+  margin: 5px;
+  padding: 10px;
+}
+
+dialog button {
+  vertical-align: middle;
+  width: 100px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 10px auto 10px;
+  background-color: darkkhaki
+}
